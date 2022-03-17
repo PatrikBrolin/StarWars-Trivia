@@ -162,7 +162,7 @@ body .characters-div {
 }
 
 body .characters-div .character-one {
-  -ms-grid-column: character-one;
+
       grid-column-start: character-one;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,8 +187,8 @@ body .characters-div .character-one img {
 }
 
 body .characters-div .character-two {
-  -ms-grid-column: character-two;
-      grid-column-start: character-two;
+  
+  grid-column-start: character-two;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
