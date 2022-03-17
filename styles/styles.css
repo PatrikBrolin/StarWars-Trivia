@@ -1,0 +1,213 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("/images/Background.jpg");
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: [selection] 25% [characters] 1fr;
+      grid-template-rows: [selection] 25% [characters] 1fr;
+  color: white;
+  text-shadow: 0px 0px 3px black;
+}
+
+body .noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body button {
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  background-size: 200% 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: white;
+  border-radius: 5px;
+  margin: 0px 5px;
+}
+
+body button:before {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80px;
+  height: 40px;
+  background-color: #1b2845;
+  background-image: linear-gradient(315deg, #1b2845 0%, #274060 74%);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+body button:hover {
+  background-position: right;
+}
+
+body button:hover:before {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+body button:focus {
+  outline: none;
+}
+
+body .comparements {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 400px;
+  height: auto;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  text-shadow: 0px 0px 3px black;
+}
+
+body .selection-div {
+  position: relative;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .selection-div form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .selection-div form h1 {
+  color: white;
+  text-shadow: 0px 0px 3px black;
+}
+
+body .selection-div form select {
+  border: none;
+  background-color: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-align-last: center;
+}
+
+body .selection-div form #character-one {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+body .selection-div form #character-two {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+body .selection-div form button {
+  position: relative;
+  top: 40px;
+}
+
+body .characters-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [left-margin] 10% [character-one] 40% [character-two] 40% [right-margin] 10%;
+      grid-template-columns: [left-margin] 10% [character-one] 40% [character-two] 40% [right-margin] 10%;
+}
+
+body .characters-div .character-one {
+  -ms-grid-column: character-one;
+      grid-column-start: character-one;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .characters-div .character-one p {
+  font-size: 30px;
+  color: white;
+}
+
+body .characters-div .character-one img {
+  width: 400px;
+  height: auto;
+}
+
+body .characters-div .character-two {
+  -ms-grid-column: character-two;
+      grid-column-start: character-two;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .characters-div .character-two p {
+  font-size: 30px;
+  color: white;
+}
+
+body .characters-div .character-two img {
+  width: 400px;
+  height: auto;
+}
+/*# sourceMappingURL=styles.css.map */
